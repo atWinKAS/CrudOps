@@ -1,38 +1,34 @@
 ﻿
-<div data-ng-app="RESTClientModule">
-    <div data-ng-controller="MVCDynamicMenuWCF_Controller">
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-collapse collapse">
-                    <div style="overflow: visible;">
-                        <ul class="menu">
 
-                            <li data-ng-repeat="menus in MenuDetailsDisp">
-                                <p>{{menus.Name}}</p>
+<div class="container" style="padding-top: 20px;">
+    <div data-ng-app="RESTClientModule">
+        <div data-ng-controller="MVCDynamicMenuWCF_Controller">
+                <div class="container">
+                            <ul class="menu">
 
-                            </li>
+                                <li data-ng-repeat="menus in MenuDetailsDisp">
+                                    <p>{{menus.Name}}</p>
 
-                        </ul>
+                                </li>
 
-                    </div>
+                            </ul>
 
+                    
                 </div>
 
-            </div>
-
+            
         </div>
-       
-    </div>
 
+    </div>
 </div>
 
-@section scripts {
-    <script src="~/Scripts/MyScripts/module.js"></script>
+    @section scripts {
+        <script src="~/Scripts/MyScripts/module.js"></script>
 
-    <script src="~/Scripts/MyScripts/service.js"></script>
+        <script src="~/Scripts/MyScripts/service.js"></script>
 
-    <script src="~/Scripts/MyScripts/controller.js"></script>
-}
+        <script src="~/Scripts/MyScripts/controller.js"></script>
+    }
 
 
 
