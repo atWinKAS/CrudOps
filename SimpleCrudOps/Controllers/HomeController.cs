@@ -14,5 +14,12 @@ namespace SimpleCrudOps.Controllers
 
             return View();
         }
+
+        public ActionResult Users()
+        {
+            ViewBag.Title = "Users Page";
+
+            return View();
+        }
     }
 }

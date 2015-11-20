@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SimpleCrudOps.Models
+namespace MobileService.Models
 {
     public class User
     {
@@ -25,6 +23,5 @@ namespace SimpleCrudOps.Models
         [Column(TypeName = "varchar")]
         [MaxLength(15)]
         public string ContactNo { get; set; }
-    
     }
 }
