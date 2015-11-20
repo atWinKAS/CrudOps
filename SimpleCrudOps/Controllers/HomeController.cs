@@ -21,5 +21,12 @@ namespace SimpleCrudOps.Controllers
 
             return View();
         }
+
+        public ActionResult WcfUsers()
+        {
+            ViewBag.Title = "Wcf Users Page";
+
+            return View();
+        }
     }
 }
